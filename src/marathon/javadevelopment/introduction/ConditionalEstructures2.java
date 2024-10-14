@@ -19,5 +19,7 @@ public class ConditionalEstructures2 {
         String results = salary > 5000 ? donationMessage : notDonationMessage;
         // String results = salary > 5000 ? ""I am going to donation 500 to DevDojo" : "I dont have the means yet, but I will";
 
+
+
     }
 }
