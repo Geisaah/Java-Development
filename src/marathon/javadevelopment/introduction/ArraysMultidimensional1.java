@@ -11,6 +11,7 @@ public class ArraysMultidimensional1 {
             System.out.println("\n----");
             for (int num: arrayBase){
                 System.out.print(num + " ");
+
             }
         }
     }
