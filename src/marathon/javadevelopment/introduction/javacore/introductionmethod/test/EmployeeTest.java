@@ -5,12 +5,11 @@ import marathon.javadevelopment.introduction.javacore.introductionmethod.domain.
 public class EmployeeTest {
     public static void main(String[] args) {
         Employee employee = new Employee();
-        employee.name = "Evim";
-        employee.age = 29;
-        employee.salary = new double[]{1200, 987.32,2000};
-
-
+        employee.setName("Evim");
+        employee.setAge(29);
+        employee.setSalary(new double[]{1200, 987.32,2000});
         employee.print();
         employee.printSalaryAverage();
+        System.out.println("Employee" + employee.getAverage());
     }
 }
