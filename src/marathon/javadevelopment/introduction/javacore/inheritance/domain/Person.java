@@ -5,7 +5,25 @@ public class Person {
     protected String cpf;
     protected Address address;
 
-    public void print(){
+    static {
+        System.out.println("inside the initialization static block Person");
+    }
+
+    {
+        System.out.println("inside the initialization  block Person 1");
+    }
+
+    {
+        System.out.println("inside the initialization  block Person 2");
+    }
+
+    public Person(String name) {
+        //super();
+        System.out.println("inside the Person constructor ");
+        this.name = name;
+    }
+
+    public void print() {
         System.out.println(this.name);
         System.out.println(this.cpf);
         System.out.println(this.address.getStreet() + " " + this.address.getZipCode());

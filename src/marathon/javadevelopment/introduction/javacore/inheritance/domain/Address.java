@@ -4,10 +4,6 @@ public class Address {
     private String street;
     private String zipCode;
 
-public void print(){
-    Person p = new Person();
-    p.name = "Geisa";
-}
 
     public String getStreet() {
         return street;
