@@ -2,24 +2,18 @@ package marathon.javadevelopment.introduction.javacore.eenum.domain;
 
 public class Client {
     private String name;
-    private String type;
-    public static final String PERSON_NATURAL = "PERSON_NATURAL";
-    public static final String LEGAL_PERSON = "LEGAL_PERSON";
+    private ClientType clientType;
 
-
-    public Client(String name, String type) {
-        if (!type.equals(PERSON_NATURAL) == false && !type.equals(LEGAL_PERSON) == false){
-            return;
-        }
+    public Client(String name, ClientType clientType) {
         this.name = name;
-        this.type = type;
+        this.clientType = clientType;
     }
 
     @Override
     public String toString() {
         return "Client{" +
                 "name='" + name + '\'' +
-                ", type='" + type + '\'' +
+                ", clientType=" + clientType +
                 '}';
     }
 
@@ -31,11 +25,16 @@ public class Client {
         this.name = name;
     }
 
-    public String getType() {
-        return type;
+    public ClientType getClientType() {
+        return clientType;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setClientType(ClientType clientType) {
+        this.clientType = clientType;
     }
+    // private String type;
+   // public static final String PERSON_NATURAL = "PERSON_NATURAL";
+   // public static final String LEGAL_PERSON = "LEGAL_PERSON";
+
+
 }
