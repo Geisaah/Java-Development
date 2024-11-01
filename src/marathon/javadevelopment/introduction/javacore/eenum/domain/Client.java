@@ -1,9 +1,6 @@
 package marathon.javadevelopment.introduction.javacore.eenum.domain;
 
 public class Client {
-    public enum PaymentType{
-        DEBIT, CREDIT
-    }
     private String name;
     private ClientType clientType;
     private PaymentType paymentType;
