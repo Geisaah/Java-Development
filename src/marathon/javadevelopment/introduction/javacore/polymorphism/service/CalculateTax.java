@@ -12,6 +12,11 @@ public class CalculateTax {
         System.out.println("Product: " +product.getName());
         System.out.println("Value: " +product.getValue());
         System.out.println("Tax to be paid: " + tax);
+        if(product instanceof Tomato) {
+            Tomato tomato = (Tomato) product;
+
+            System.out.println(((Tomato) product).getExpirationDate());
+        }
     }
 }
 
