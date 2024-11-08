@@ -1,4 +1,4 @@
-package marathon.javadevelopment.introduction.javacore.dates.test;
+package marathon.javadevelopment.introduction.javacore.formatting.test;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -15,7 +15,8 @@ public class DateFormatTest {
         df[5] = DateFormat.getDateInstance(DateFormat.LONG);
         df[6] = DateFormat.getDateInstance(DateFormat.FULL);
 
-        for (DateFormat dateFormat: df  )
-        System.out.println(dateFormat.format(calendar.getTime()));
+        for (DateFormat dateFormat: df  ) {
+            System.out.println(dateFormat.format(calendar.getTime()));
+        }
     }
 }
