@@ -8,7 +8,7 @@ import java.io.File;
 //BufferedWriter
 //BufferedReader
 //public class FileWriter1
-public class FileWriter {
+public class FileWriterTest {
     public static void main(String[] args) {
         File file = new File("file.txt");
         try ( java.io.FileWriter fw = new java.io.FileWriter(file)) {
